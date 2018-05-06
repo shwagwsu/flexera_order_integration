@@ -1,0 +1,8 @@
+{
+ 
+    "WsUserName":"XXXXXXXX",
+    "WsPassword":"XXXXXXXX",
+    "UserAcctHierarchyServiceEndPoint":"https://gehealthcare-fno-uat.flexnetoperations.com/flexnet/services/v2/UserAcctHierarchyService",
+    "ProductPackagingService":"https://gehealthcare-fno-uat.flexnetoperations.com/flexnet/services/v1/ProductPackagingService",
+    "EntitlementOrderService":"https://gehealthcare-fno-uat.flexnetoperations.com/flexnet/services/v3/EntitlementOrderService"
+}

@@ -1,0 +1,28 @@
+{
+    "appenders": {
+      "access": {
+        "type": "dateFile",
+        "filename": "log/access.log",
+        "pattern": "-yyyy-MM-dd",
+        "category": "http"
+      },
+      "app":{
+        "type": "console",
+        "layout": { "type": "colored" }
+
+      },
+     "errorFile": {
+        "type": "file",
+        "filename": "log/errors.log"
+      },
+      "errors": {
+        "type": "logLevelFilter",
+        "level": "ERROR",
+        "appender": "errorFile"
+      }
+    },
+    "categories": {
+      "default": { "appenders": [ "app", "errors" ], "level": "DEBUG" },
+      "http": { "appenders": [ "access"], "level": "DEBUG" }
+    }
+  }
